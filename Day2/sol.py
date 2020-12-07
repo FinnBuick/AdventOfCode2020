@@ -7,7 +7,7 @@ with open("input.txt") as f:
     count2 = 0
 
     for line in lines:
-        match = re.findall(r'(\d+)-(\d+) ([a-z]): (\w*)',line)[0]
+        match = re.findall(r'(\d+)-(\d+) ([a-z]): (\w*)', line)[0]
         lower = int(match[0])
         upper = int(match[1])
         letter = match[2]
