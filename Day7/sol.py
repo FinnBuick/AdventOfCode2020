@@ -1,5 +1,5 @@
 
-with open("input.txt") as f:
+with open("Day7/input.txt") as f:
     lines = [x.strip() for x in f.readlines()]
 
 
@@ -56,4 +56,4 @@ def rec_count(bag, bags):
     return count
 
 
-print("Part 2:", rec_count('shiny gold', bags))
+print("Part 2:", rec_count('shiny gold', bags)-1)
